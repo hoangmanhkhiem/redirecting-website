@@ -7,10 +7,9 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Redirecting to Khiem's Tech Portfolio",
-  description: "Redirecting to about.khiem.tech - Hoang Manh Khiem's AI Developer & System Architect portfolio",
+  title: "Khiem's Tech",
+  description: "Hoang Manh Khiem's AI Researcher & System Architect",
   robots: "noindex, nofollow",
-  generator: "v0.dev",
 }
 
 export default function RootLayout({
