@@ -24,18 +24,7 @@ portfolio_url = "https://about.khiem.tech"
 print(f"Portfolio: {portfolio_url}")
 print("Redirecting to portfolio...")`,
       output: "Portfolio: https://about.khiem.tech\nRedirecting to portfolio...",
-    },
-    {
-      code: `
-# Redirect countdown
-import time
-for i in range(3, 0, -1):
-    print(f"Redirecting in {i}...")
-    time.sleep(1)
-    
-print("🚀 Opening portfolio now!")`,
-      output: "Redirecting in 3...\nRedirecting in 2...\nRedirecting in 1...\n🚀 Opening portfolio now!",
-    },
+    }
   ]
 
   useEffect(() => {
@@ -175,11 +164,11 @@ print("🚀 Opening portfolio now!")`,
       setTerminalOutput((prev) => [...prev, "", "✅ Script execution completed successfully!"])
       await new Promise((resolve) => setTimeout(resolve, 500))
 
-      // 5-second countdown before redirect
-      for (let countdown = 3; countdown > 0; countdown--) {
-        setTerminalOutput((prev) => [...prev, `🔄 Redirecting to portfolio in ${countdown} seconds...`])
-        await new Promise((resolve) => setTimeout(resolve, 1000))
-      }
+      // // 5-second countdown before redirect
+      // for (let countdown = 3; countdown > 0; countdown--) {
+      //   setTerminalOutput((prev) => [...prev, `🔄 Redirecting to portfolio in ${countdown} seconds...`])
+      //   await new Promise((resolve) => setTimeout(resolve, 1000))
+      // }
 
       setTerminalOutput((prev) => [...prev, "🚀 Opening portfolio now!"])
 
